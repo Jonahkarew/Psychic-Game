@@ -13,7 +13,7 @@ var computerChoicesBank = "abcdefghijklmnopqrstuvwxyz".split("");
 var wins = 0;
 var losses = 0;
 var guessesLeft = 10;
-var userGuess ;
+var userGuess;
 var computerGuess
 var lettersAlreadyGuessed = [];
 
@@ -32,15 +32,9 @@ var lettersAlreadyGuessed = [];
 //   //lettersAlreadyGuessed
 
 //VARIABLEREFERENCES
-var $wins = 0;
-var $losses = 0;
-var $guessesLeft = 10;
-var $userGuess = [];
-var $computerGuess
-var $lettersAlreadyGuessed = [];
 
 
-console.log (computerGuess)
+
 
 
 // //start a new game
@@ -66,6 +60,8 @@ function newGame() {
         computerGuess = computerChoicesBank[Math.floor(Math.random() * computerChoicesBank.length)];
         console.log(computerGuess);
  }
+
+ 
 document.onkeyup = function(){
        
         
@@ -94,7 +90,11 @@ document.onkeyup = function(){
 
 
 
-
+         document.getElementById("$wins").innerHTML = wins;
+         document.getElementById("$losses").innerHTML = losses;
+         document.getElementById("$guessesLeft").innerHTML = guessesLeft;
+         document.getElementById("$lettersAlreadyGuessed").innerHTML = lettersAlreadyGuessed;
+         document.getElementById("$userGuess").innerHTML = userGuess;
 
 
 
