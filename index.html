@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/reset.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Psychic Game</title>
+</head>
+<body>
+  <div class="container">
+  <h1>Play The Psychic Game</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo rem impedit magni at, saepe, recusandae vel a et nulla doloribus sit ullam? Ea, voluptatem nulla maxime maiores cupiditate assumenda at.</p>
+  <hr>
+
+
+
+  <div id="currentGame">
+    <!-- current guess -->
+    <div>You guessed: <span id="$userguess"></span></div>
+    <!-- computer guessed -->
+    <div>Computer guessed: <span id="$computerGuess"></span></div>
+    <!-- number of guesses left -->
+    <div>Guesses Left: <span id="$guessesLeft"></span></div>
+    <!-- your guesses so far -->
+    <div>Your guesses so far: <span id="$lettersAlreadyGuessed"></span></div>
+  </div>
+  <hr>
+  <div id="scoreTable">
+    <!-- increases wins for each win -->
+    <div>Wins: <span id="$wins"></span></div>
+    <!-- increase losses for each loss -->
+    <div>Losses: <span id="$losses"></span></div>
+  </div>
+  </div>
+
+<script src="assets/js/game.js"></script>
+
+</body>
+</html>
